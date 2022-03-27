@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://iamlab.pouchen.com/auth/realms/pcg
+          jwk-set-uri: https://iamlab.pouchen.com/auth/realms/pcg/protocol/openid-connect/certs
+          user-info-uri: https://iamlab.pouchen.com/auth/realms/pcg/protocol/openid-connect/userinfo
